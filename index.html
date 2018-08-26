@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>My Recipe Collection App</title>
-    <script type="text/javascript" src="/js/app.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
-  </head>
-    <h1>My Recipe Collection</h1>
-  <body>
-    <div class="container">
+<head>
+  <meta charset="utf-8">
+  <title>My Recipe Collection App</title>
+  <script type="text/javascript" src="/js/app.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+</head>
+<h1>My Recipe Collection</h1>
+<body>
+  <div class="container">
 
-      <form id="new-recipe-form">
-        <div id="form-wrapper">
+    <form id="new-recipe-form">
+      <div id="form-wrapper">
 
-          <div class="form-item" id="name">
-            <label for="recipe-name">* Recipe Name:</label>
-            <input type="text" id="recipe-name" placeholder="Type the recipe's name" required>
-          </div>
-
-          <div class="form-item">
-            <label for="servings">* Number of Servings:</label>
-            <select id="servings" required>
-              <option value="" disabled selected></option>
-              <option value="1">Single Serving</option>
-              <option value="2">2 People</option>
-              <option value="4">4 People</option>
-              <option value="6+">6+ People</option>
-            </select>
-          </div>
-
-          <div class="form-item" id="description">
-            <label for="recipe-description">Recipe Description<br>and Notes:</label>
-            <textarea id="recipe-description" placeholder="Include a description of your recipe" rows="8" cols="80"></textarea>
-          </div>
-
-          <div class="button" id="save">
-            <button type="button" name="save-button">Save This Recipe</button>
-          </div>
-
+        <div class="form-item" id="name">
+          <label for="recipe-name">* Recipe Name:</label>
+          <input type="text" id="recipe-name" placeholder="Type the recipe's name" required>
         </div>
 
-      </form>
-    </div>
-  </body>
+        <div class="grid">
+          <div class="grid-row">
+            <div class="cell">
+              <div class="form-item">
+                <label for="servings">* Number of Servings:</label>
+                <select id="servings" required>
+                  <option value="" disabled selected></option>
+                  <option value="1">Single Serving</option>
+                  <option value="2">2 People</option>
+                  <option value="4">4 People</option>
+                  <option value="6+">6+ People</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="cell">
+              <div class="form-item">
+                <label for="diet">Dietary Information</label>
+                <select id="diet">
+                  <option value="" disabled selected></option>
+                  <option value="nut">Nut Free</option>
+                  <option value="carb">Low Carb</option>
+                  <option value="sodium">Low Sodium</option>
+                  <option value="low-fat">Low Fat</option>
+                  <option value="protein">High Protein</option>
+                  <option value="fat-free">Fat Free</option>
+                  <option value="gluten">Gluten Free</option>
+                  <option value="lactose">Lactose Free</option>
+                  <option value="diabetic">Diabetic</option>
+                  <option value="veggie">Vegetarian</option>
+                  <option value="vegan">Vegan</option>
+                  <option value="other">Other</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-item" id="description">
+          <label for="recipe-description">Recipe Description<br>and Notes:</label>
+          <textarea id="recipe-description" placeholder="Include a description of your recipe" rows="3" cols="80"></textarea>
+        </div>
+
+        <div class="button" id="save">
+          <button type="button" name="save-button">Save This Recipe</button>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+</body>
 </html>

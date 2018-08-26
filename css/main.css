@@ -45,13 +45,23 @@ label {
   text-align: right;
 }
 
+select {
+  vertical-align: top;
+  margin-right: 20pt;
+  font: 1em sans-serif;
+  width: 110pt;
+  box-sizing: border-box;
+  border: 1pt solid black;
+}
+
 button {
   margin-left: .5em;
 }
 
-.container {
+.grid-row {
   display: flex;
-
+  flex-direction: row;
+  align-self: center;
 }
 
 .button {

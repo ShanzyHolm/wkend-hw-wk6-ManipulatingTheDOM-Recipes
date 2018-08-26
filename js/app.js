@@ -1,11 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('new-recipt-form');
   form.addEventListener('submit', handleFormSubmit);
+
+  renderRecipeList();
 });
 
 const getRecipeList = function(){
-
-}
+  if (JSON.parse(localStorage.getItem('recipes')) !== null ) {
+    return JSON.parse(localStorage.getItem('recipes'));
+  } else {
+    return [];
+  }
+};
 
 const handleFormSubmit = function(event){
   event.preventDefault();
@@ -20,6 +26,9 @@ const handleFormSubmit = function(event){
 
   recipeList.push(newRecipe);
 
+  localStorage.setItem('recipes', JSON.stringify(recipeList));
+  renderRecipeList();
+  event.target.reset();
 };
 
 const buildRecipeList = function(recipe) {

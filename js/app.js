@@ -3,8 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', handleFormSubmit);
 });
 
+const getRecipeList = function(){
+
+}
+
 const handleFormSubmit = function(event){
   event.preventDefault();
+  recipeList = getList();
 
     const newRecipe = {
       name: event.target.recipe-name.value,
@@ -12,6 +17,8 @@ const handleFormSubmit = function(event){
       diet: event.target.diet.value,
       description: event.target.recipe-description.value,
     };
+
+  recipeList.push(newRecipe);
 
 };
 

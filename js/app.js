@@ -20,4 +20,11 @@ const buildRecipeList = function(recipe) {
   const dietLi = document.createElement('li');
 
   const descriptionLi = document.createElement('li');
+
+  recipeUl.appendChild(recipeNameLi)
+  recipeUl.appendChild(servingsLi)
+  recipeUl.appendChild(dietLi)
+  recipeUl.appendChild(descriptionLi)
+
+  return recipeUl;
 }

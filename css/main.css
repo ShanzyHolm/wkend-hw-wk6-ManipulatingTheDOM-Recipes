@@ -1,0 +1,17 @@
+h1 {
+  text-align: left;
+  margin-left: 50pt;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 40pt;
+  color: gold;
+}
+
+body {
+  background: black url('images/background1.jpg');
+/* image from: https://goo.gl/images/bbKLhL*/
+  background-size: cover;
+  align-items: center;
+
+}
+
+/* lemonchiffon */

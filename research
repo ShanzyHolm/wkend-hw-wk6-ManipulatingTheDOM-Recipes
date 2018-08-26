@@ -1,0 +1,35 @@
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
+
+form-wrapper -
+https://university.webflow.com/article/intro-to-forms
+
+ https://github.com/notwaldorf/better-form/blob/master/form-wrapper.html
+
+ form item -
+ https://js.devexpress.com/Documentation/15_2/ApiReference/UI_Widgets/dxForm/Simple_Item/
+
+
+<link href="https://fonts.googleapis.com/css?family=Alice|Biryani|Black+And+White+Picture|Cherry+Cream+Soda|Cookie|Courgette|Croissant+One|Flavors|Gabriela|Homemade+Apple|Lemonada|Oregano|Peddana|Pridi|Ribeye|Rum+Raisin|Spicy+Rice|Tangerine" rel="stylesheet">
+
+font-family: 'Cookie', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Alice', serif;
+font-family: 'Pridi', serif;
+font-family: 'Biryani', sans-serif;
+font-family: 'Gabriela', serif;
+font-family: 'Black And White Picture', sans-serif;
+font-family: 'Rum Raisin', sans-serif;
+font-family: 'Peddana', serif;
+font-family: 'Oregano', cursive;
+font-family: 'Lemonada', cursive;
+font-family: 'Cherry Cream Soda', cursive;
+font-family: 'Flavors', cursive;
+font-family: 'Ribeye', cursive;
+font-family: 'Croissant One', cursive;
+font-family: 'Spicy Rice', cursive;
+
+font-family: 'Paprika', cursive;
+font-family: 'Combo', cursive;
+font-family: 'Crafty Girls', cursive;

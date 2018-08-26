@@ -47,5 +47,13 @@ const buildRecipeList = function(recipe) {
 }
 
 const renderRecipeList = function() {
+  const recipeDiv = document.querySelector('#recipe-collection-list');
+    recipeDiv.innerHTML = "";
+
+  const recipeList = getList();
+  recipeList.forEach((recipe) => {
+    recipeUl = buildRecipeList(recipe);
+    recipeDiv.appendChild(recipeUl);
+  });
 
 };

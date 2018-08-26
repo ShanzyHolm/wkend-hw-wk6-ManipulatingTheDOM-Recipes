@@ -17,7 +17,7 @@ body {
 form {
   display: flex;
   width: 475pt;
-  border: 1pt dotted gold;
+  border: 3pt dotted gold;
   padding: 1pt;
   border-radius: 1pt;
   margin-left: 30pt;

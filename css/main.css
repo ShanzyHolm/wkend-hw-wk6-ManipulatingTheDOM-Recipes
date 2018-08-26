@@ -11,7 +11,49 @@ body {
 /* image from: https://goo.gl/images/bbKLhL*/
   background-size: cover;
   align-items: center;
+  color: lemonchiffon;
+}
+
+form {
+  display: flex;
+  width: 475pt;
+  border: 1pt dotted gold;
+  padding: 1pt;
+  border-radius: 1pt;
+  margin-left: 30pt;
+}
+
+form div, div {
+  margin-top: 7pt;
+  margin-bottom: 7pt;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 350pt;
+  box-sizing: border-box;
+  border: 1pt solid black;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+label {
+  display: inline-block;
+  width: 100pt;
+  text-align: right;
+}
+
+button {
+  margin-left: .5em;
+}
+
+.container {
+  display: flex;
 
 }
 
-/* lemonchiffon */
+.button {
+  padding-left: 150pt;
+}

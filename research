@@ -1,14 +1,36 @@
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
 
-form-wrapper -
+=============================================
+--form styling --*****EXCELLENT
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form
+
+--form-wrapper--
 https://university.webflow.com/article/intro-to-forms
 
- https://github.com/notwaldorf/better-form/blob/master/form-wrapper.html
+https://github.com/notwaldorf/better-form/blob/master/form-wrapper.html
 
- form item -
- https://js.devexpress.com/Documentation/15_2/ApiReference/UI_Widgets/dxForm/Simple_Item/
+--form item--
+https://js.devexpress.com/Documentation/15_2/ApiReference/UI_Widgets/dxForm/Simple_Item/
+
+--label tag information--
+https://www.tutorialspoint.com/html/html_label_tag.htm
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+
+--input--
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+--flexbox - container --
+https://www.w3schools.com/css/css3_flexbox.asp
+
+https://www.quackit.com/css/flexbox/tutorial/nested_flex_containers.cfm
+
+https://internetingishard.com/html-and-css/flexbox/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 
 
+=============================================
 <link href="https://fonts.googleapis.com/css?family=Alice|Biryani|Black+And+White+Picture|Cherry+Cream+Soda|Cookie|Courgette|Croissant+One|Flavors|Gabriela|Homemade+Apple|Lemonada|Oregano|Peddana|Pridi|Ribeye|Rum+Raisin|Spicy+Rice|Tangerine" rel="stylesheet">
 
 font-family: 'Cookie', cursive;

@@ -84,5 +84,6 @@ p {
 
 
 .button {
-  padding-left: 150pt;
+  padding-left: 10pt;
+  margin-left: 100pt;
 }

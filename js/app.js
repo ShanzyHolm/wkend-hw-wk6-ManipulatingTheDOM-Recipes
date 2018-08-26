@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('new-recipt-form');
+  const form = document.querySelector('#new-recipe-form');
   form.addEventListener('submit', handleFormSubmit);
 
   renderRecipeList();
@@ -15,13 +15,13 @@ const getRecipeList = function(){
 
 const handleFormSubmit = function(event){
   event.preventDefault();
-  recipeList = getList();
+  recipeList = getRecipeList();
 
     const newRecipe = {
-      name: event.target.recipe-name.value,
+      name: event.target.name.value,
       servings: event.target.servings.value,
       diet: event.target.diet.value,
-      description: event.target.recipe-description.value,
+      description: event.target.description.value,
     };
 
   recipeList.push(newRecipe);
@@ -42,15 +42,15 @@ const buildRecipeList = function(recipe) {
     servingsLi.textContent = `Serves: ${recipe.servings}`;
 
   const dietLi = document.createElement('li');
-    dietLi.textContent = `This is suitable for a ${recipe.diet} diet`;
+    dietLi.textContent = `This is suitable for ${recipe.diet} diets`;
 
   const descriptionLi = document.createElement('li');
     descriptionLi.textContent = `Additional Notes or Descriptions: ${recipe.description}`;
 
-  recipeUl.appendChild(recipeNameLi)
-  recipeUl.appendChild(servingsLi)
-  recipeUl.appendChild(dietLi)
-  recipeUl.appendChild(descriptionLi)
+  recipeUl.appendChild(recipeNameLi);
+  recipeUl.appendChild(servingsLi);
+  recipeUl.appendChild(dietLi);
+  recipeUl.appendChild(descriptionLi);
 
   return recipeUl;
 }
@@ -59,10 +59,9 @@ const renderRecipeList = function() {
   const recipeDiv = document.querySelector('#recipe-collection-list');
     recipeDiv.innerHTML = "";
 
-  const recipeList = getList();
+  const recipeList = getRecipeList();
   recipeList.forEach((recipe) => {
     recipeUl = buildRecipeList(recipe);
     recipeDiv.appendChild(recipeUl);
   });
-
 };

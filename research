@@ -20,6 +20,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
 --input--
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 
+--checkboxes--
+https://www.html5-tutorial.net/forms/checkboxes/
+
 --flexbox - container --
 https://www.w3schools.com/css/css3_flexbox.asp
 
@@ -55,3 +58,38 @@ font-family: 'Spicy Rice', cursive;
 font-family: 'Paprika', cursive;
 font-family: 'Combo', cursive;
 font-family: 'Crafty Girls', cursive;
+
+================================================
+
+<!-- <fieldset>
+<legend>What is Your Favorite Pet?</legend>
+<input type="checkbox" name="favorite_pet" value="Cats">Cats<br>
+<input type="checkbox" name="favorite_pet" value="Dogs">Dogs<br>
+<input type="checkbox" name="favorite_pet" value="Birds">Birds<br>
+<br>
+</fieldset>  -->
+
+<!-- <input type="checkbox" name="favorite_pet" value="Dogs" id="dogs">
+<label for="dogs">Dogs</label><br> -->
+
+
+
+====================
+
+        <!-- <label for="main-ingredients">Please Select<br>Main Ingredients:</label>
+        <div class="grid1" id="main-ing">
+          <div class="grid-row1">
+            <div class="cell1">
+              <input type="checkbox" id="chicken" name="main-ingredients" value="chicken"><label for="chicken">Chicken</label>
+            </div>
+            <div class="cell1">
+              <input type="checkbox" id="beef" name="main-ingredients" value="beef"><label for="beef">Beef</label>
+            </div>
+            <div class="cell1">
+              <input type="checkbox" id="pork" name="main-ingredients" value="pork"><label for="pork">Pork</label>
+            </div>
+            <div class="cell1">
+              <input type="checkbox" id="fish" name="main-ingredients" value="fish"><label for="fish">Fish</label>
+            </div>
+          </div>
+        </div> -->

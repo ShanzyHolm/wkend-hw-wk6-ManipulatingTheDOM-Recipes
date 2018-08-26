@@ -58,11 +58,30 @@ button {
   margin-left: .5em;
 }
 
+p {
+  padding-left: 50pt;
+}
+
 .grid-row {
   display: flex;
   flex-direction: row;
   align-self: center;
 }
+
+.grid-row1 {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+
+.cell1 {
+  vertical-align: top;
+  /* margin-right: 20pt; */
+  width: 50pt;
+
+}
+
 
 .button {
   padding-left: 150pt;

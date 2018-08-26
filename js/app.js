@@ -45,3 +45,7 @@ const buildRecipeList = function(recipe) {
 
   return recipeUl;
 }
+
+const renderRecipeList = function() {
+
+};

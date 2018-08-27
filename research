@@ -103,3 +103,23 @@ font-family: 'Crafty Girls', cursive;
   margin-top: 20pt;
   margin-right: 5pt;
 } */
+
+
+const deleteButton = document.querySelector('#delete-button');
+  deleteButton.addEventListener('click', handleDelete);
+  
+ const handleDelete = function(event) {
+  var result = confirm("Do you really want to delete all recipes?");
+  if (result ==true){
+    const recipeList = document.querySelector("#recipeList");
+    recipeList.innerHTML = "";
+  }
+  
+  const deleteRecipeList = function() {
+  const recipeDiv = document.querySelector('#recipe-collection-list');
+    recipeDiv.innerHTML = "";
+}
+  
+  localStorage.setItem('recipes', JSON.stringify(recipeList));
+  deleteRecipeList();
+  event.target.reset();

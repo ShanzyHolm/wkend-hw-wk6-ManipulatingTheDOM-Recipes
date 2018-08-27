@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', handleFormSubmit);
 
   renderRecipeList();
+
+  const deleteButton = document.querySelector('#delete-all');
+  deleteButton.addEventListener('click', handleDelete);
 });
 
 const getRecipeList = function(){
@@ -64,4 +67,18 @@ const renderRecipeList = function() {
     recipeUl = buildRecipeList(recipe);
     recipeDiv.appendChild(recipeUl);
   });
+
+  const handleDelete = function(event) {
+   var result = confirm("Do you really want to delete all recipes?");
+    recipeList = getRecipeList();
+   if (result == true){
+     const recipeList = document.querySelector("#recipeList");
+     recipeList.innerHTML = "";
+
+     localStorage.setItem('recipes', JSON.stringify(recipeList));
+      recipeList.innerHTML = "";
+     event.target.reset();
+   };
+ };
+
 };

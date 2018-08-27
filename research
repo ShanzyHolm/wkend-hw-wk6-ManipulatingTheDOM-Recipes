@@ -104,34 +104,22 @@ font-family: 'Crafty Girls', cursive;
   margin-right: 5pt;
 } */
 
-
+===========================
 const deleteButton = document.querySelector('#delete-button');
   deleteButton.addEventListener('click', handleDelete);
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> c502d0d5cf71adb4cd54dfe5b6bcc40c14309a7b
  const handleDelete = function(event) {
   var result = confirm("Do you really want to delete all recipes?");
   if (result ==true){
     const recipeList = document.querySelector("#recipeList");
     recipeList.innerHTML = "";
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> c502d0d5cf71adb4cd54dfe5b6bcc40c14309a7b
   const deleteRecipeList = function() {
   const recipeDiv = document.querySelector('#recipe-collection-list');
     recipeDiv.innerHTML = "";
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> c502d0d5cf71adb4cd54dfe5b6bcc40c14309a7b
   localStorage.setItem('recipes', JSON.stringify(recipeList));
   deleteRecipeList();
   event.target.reset();

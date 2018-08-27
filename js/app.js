@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   deleteButton.addEventListener('click', handleDelete);
 });
 
+const deleteRecipeList = function(){
+  if (JSON.parse(localStorage.getItem('recipes')) !== null ) {
+    return [];
+  }
+};
+
 const getRecipeList = function(){
   if (JSON.parse(localStorage.getItem('recipes')) !== null ) {
     return JSON.parse(localStorage.getItem('recipes'));
@@ -32,6 +38,19 @@ const handleFormSubmit = function(event){
   localStorage.setItem('recipes', JSON.stringify(recipeList));
   renderRecipeList();
   event.target.reset();
+};
+
+const handleDelete = function(event) {
+ var result = confirm("Do you really want to delete all recipes?");
+
+ if (result == true){
+   const recipeList = document.querySelector("#recipeList");
+   recipeList.innerHTML = "";
+
+   localStorage.setItem('recipes', JSON.stringify(recipeList));
+    recipeList.innerHTML = "";
+    deleteRecipeList();
+ };
 };
 
 const buildRecipeList = function(recipe) {
@@ -68,17 +87,6 @@ const renderRecipeList = function() {
     recipeDiv.appendChild(recipeUl);
   });
 
-  const handleDelete = function(event) {
-   var result = confirm("Do you really want to delete all recipes?");
-    recipeList = getRecipeList();
-   if (result == true){
-     const recipeList = document.querySelector("#recipeList");
-     recipeList.innerHTML = "";
 
-     localStorage.setItem('recipes', JSON.stringify(recipeList));
-      recipeList.innerHTML = "";
-     event.target.reset();
-   };
- };
 
 };

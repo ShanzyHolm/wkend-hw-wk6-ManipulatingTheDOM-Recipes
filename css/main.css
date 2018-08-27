@@ -4,6 +4,19 @@ h1 {
   font-family: 'Homemade Apple', cursive;
   font-size: 40pt;
   color: gold;
+  text-shadow: 1pt 1pt 3pt lemonchiffon;
+}
+
+h3 {
+  text-align: left;
+  margin-left: 50pt;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 25pt;
+  color: gold;
+  text-shadow: 3pt 3pt 5pt darkslategray;
+  /* text-decoration: underline; */
+  padding-right: 15pt;
+  margin-top: 15pt;
 }
 
 body {
@@ -82,8 +95,24 @@ p {
 
 }
 
+.cell3 {
+  margin-right: 50pt;
+}
+
 
 .button {
   padding-left: 10pt;
   margin-left: 100pt;
+}
+
+ul {
+  background-color: lemonchiffon;
+  color: darkslategray;
+  margin-left: 30pt;
+  margin-right: 50pt;
+  padding-top: 8pt;
+  padding-bottom: 8pt;
+  border-radius: 15pt;
+  border-style: groove;
+  border-color: gold;
 }

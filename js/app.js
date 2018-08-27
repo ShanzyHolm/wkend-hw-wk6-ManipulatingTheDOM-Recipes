@@ -42,9 +42,9 @@ const handleFormSubmit = function(event){
 
 const handleDelete = function(event) {
   var result = confirm("Do you really want to delete this list?");
-  if (result ==true){
-    const readingList = document.querySelector("#reading-list");
-    readingList.innerHTML = "";
+  if (result == true){
+    const readingList = document.querySelector("#recipe-collection-list");
+    // readingList.innerHTML = "";
 
     localStorage.deleteItem('recipes', JSON.stringify(recipeList));
      recipeList.innerHTML = "";

@@ -123,3 +123,17 @@ const deleteButton = document.querySelector('#delete-button');
   localStorage.setItem('recipes', JSON.stringify(recipeList));
   deleteRecipeList();
   event.target.reset();
+
+
+  Recipe Name: How to make ice cubes
+  Serves: 6+
+  This is suitable for other diets
+  Additional Notes or Descriptions: Equipment and ingredients: water, ice cube tray, freezer. Substitutions: juice for water? Cooking time: approximately 2 hours
+  Recipe Name: Cup of Tea
+  Serves: 1
+  This is suitable for none diets
+  Additional Notes or Descriptions: Boil water in the kettle. Put chosen teabag in mug. Pour boiled water into mug. Add milk and/or sugar if needed. ** Stronger tea - leave in teabag; weaker tea - remove teabag.
+  Recipe Name: How to make ice cubes
+  Serves: 6+
+  This is suitable for other diets
+  Additional Notes or Descriptions: Water, Ice Cube Tray, Freezer Cooking time: 2+ hours Substitution: Put juice instead of water?

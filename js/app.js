@@ -44,7 +44,7 @@ const handleDelete = function(event) {
   var result = confirm("Do you really want to delete this list?");
   if (result == true){
     const readingList = document.querySelector("#recipe-collection-list");
-    // readingList.innerHTML = "";
+    readingList.innerHTML = "";
 
     localStorage.deleteItem('recipes', JSON.stringify(recipeList));
      recipeList.innerHTML = "";
